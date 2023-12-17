@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Login Tokopedia By Raihan</title>
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./login.css" />
+    </head>
+    <body>
+        <div id="login-page">
+            <div id="logo-area">
+                <img id="logo-img" src="./assets/tokopedia_logo.svg" />
+            </div>
+            <div id="logo-form-area">
+                <div id="form-wrapper">
+                    <div id="form">
+                        <div id="form-header">
+                            <h2>Masuk</h2>
+                            <a href="www.tokopedia.com/login">Daftar</a>
+                        </div>
+                        <div id="form-email">
+                            <label>No Ponsel atau Email</label>
+                            <div>
+                                <input />
+                            </div>
+                            <p>Contoh : email@tokopedia.com</p>
+                        </div>
+                        <div id="form-submit">
+                            <a href="www.google.com">Lupa Kata Sandi?</a>
+                            <div>
+                                <button>Selanjutnya</button>
+                            </div>
+                        </div>
+                        <div id="login-info">
+                            <div></div>
+                            <div>atau masuk dengan</div>
+                            <div></div>
+                        </div>
+                        <div id="login-by-google" class="login-by">
+                            <div>
+                                <img src="./assets/google.svg"/>
+                                <div>Google</div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div id="login-by-facebook" class="login-by">
+                            <div>
+                                <img src="./assets/facebook.svg"/>
+                                <div>Facebook</div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div id="info-tambahan">
+                            Belum punya akun Tokopedia? <a href="www.tokopedia.com/register">Daftar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+                2009-2020 © PT Tokopedia  |   <a href="https://www.tokopedia.com/help/">Bantuan</a>
+            </div>   
+        </div>
+    </body>
+</html>
