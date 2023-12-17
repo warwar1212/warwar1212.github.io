@@ -1,63 +1,112 @@
-<html>
-    <head>
-        <title>Login Tokopedia By Raihan</title>
-    <meta name="viewport"content="width=device-width,initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./login.css" />
-    </head>
-    <body>
-        <div id="login-page">
-            <div id="logo-area">
-                <img id="logo-img" src="./assets/tokopedia_logo.svg" />
-            </div>
-            <div id="logo-form-area">
-                <div id="form-wrapper">
-                    <div id="form">
-                        <div id="form-header">
-                            <h2>Masuk</h2>
-                            <a href="www.tokopedia.com/login">Daftar</a>
-                        </div>
-                        <div id="form-email">
-                            <label>No Ponsel atau Email</label>
-                            <div>
-                                <input />
-                            </div>
-                            <p>Contoh : email@tokopedia.com</p>
-                        </div>
-                        <div id="form-submit">
-                            <a href="www.google.com">Lupa Kata Sandi?</a>
-                            <div>
-                                <button>Selanjutnya</button>
-                            </div>
-                        </div>
-                        <div id="login-info">
-                            <div></div>
-                            <div>atau masuk dengan</div>
-                            <div></div>
-                        </div>
-                        <div id="login-by-google" class="login-by">
-                            <div>
-                                <img src="./assets/google.svg"/>
-                                <div>Google</div>
-                                <div></div>
-                            </div>
-                        </div>
-                        <div id="login-by-facebook" class="login-by">
-                            <div>
-                                <img src="./assets/facebook.svg"/>
-                                <div>Facebook</div>
-                                <div></div>
-                            </div>
-                        </div>
-                        <div id="info-tambahan">
-                            Belum punya akun Tokopedia? <a href="www.tokopedia.com/register">Daftar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="copyright">
-                2009-2020 © PT Tokopedia  |   <a href="https://www.tokopedia.com/help/">Bantuan</a>
-            </div>   
-        </div>
-    </body>
-        </html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Nomor HP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow;: 5 5 10px rgba(7, 7, 7, 2.6);
+      text-align: center; /* Menengahkan form */
+      margin-top: 20px; /* Jarak antara form dan foto atas */
+      position: relative;
+      z-index: 10; /* Menempatkan form di lapisan lebih tinggi */
+    }
+
+    img {
+      max-width: 100%; /* Memastikan foto tidak melebihi lebar form */
+      height: auto; /* Menjaga proporsi gambar */
+      border-radius: 8px; /* Memberikan sudut segiempat pada foto */
+      margin-bottom: 20px; /* Menambahkan jarak antara foto dan label/input */
+      position: relative;
+      z-index: 10; /* Menempatkan foto di lapisan lebih rendah */
+    }
+
+    .label-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    label {
+      display: inline-block;
+      margin-right: 8px;
+    }
+
+    .daftar-text {
+      color: #4caf50;
+    }
+
+    input {
+      width: calc(100% - 2px); /* Lebar kolom input diambil dari 100% minus margin kiri dan kanan */
+      padding: 12px;
+      margin-bottom: 8px;
+      box-sizing: border-box;
+    }
+
+    .example-text {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 5px;
+    }
+
+    button {
+      width: calc(100% - 20px); /* Lebar tombol diambil dari 100% minus margin kiri dan kanan */
+      background-color: #4caf50;
+      color: #fff;
+      padding: 13px;
+      border: none;
+      border-radius: 9px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .bottom-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 30px; /* Jarak antara foto dan form */
+      margin-bottom: 20px; /* Jarak antara foto bawah dan batas bawah form */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="https://raw.githubusercontent.com/Helpbri6/Helpbri6.github.io/main/seo-tokopedia-tips-strategi-removebg-preview.png" alt="Your Top Photo">
+    <form>
+      <div class="label-container">
+        <label for="nomorHP">Email atau Nomor Ponsel</label>
+        <span class="daftar-text">Daftar</span>
+      </div>
+      <input type="tel"=nomorHP" name="nomorHP" placeholder="Masukkan nomor HP" required>
+      <div class="example-text">Contoh: 123456789</div>
+  
+      <button type="submit">Kirim</button>
+    </form>
+    <img class="bottom-img" src="https://raw.githubusercontent.com/Helpbri6/Helpbri6.github.io/main/IMG_20231218_014533-removebg-preview.png" alt="Your Bottom Photo">
+  </div>
+
+</body>
+</html>
