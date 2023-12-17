@@ -1,63 +1,161 @@
-<html>
-    <head>
-        <title>Login Tokopedia By Raihan</title>
-    <meta name="viewport"content="width=device-width,initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./login.css" />
-    </head>
-    <body>
-        <div id="login-page">
-            <div id="logo-area">
-                <img id="logo-img" src="./assets/tokopedia_logo.svg" />
-            </div>
-            <div id="logo-form-area">
-                <div id="form-wrapper">
-                    <div id="form">
-                        <div id="form-header">
-                            <h2>Masuk</h2>
-                            <a href="www.tokopedia.com/login">Daftar</a>
-                        </div>
-                        <div id="form-email">
-                            <label>No Ponsel atau Email</label>
-                            <div>
-                                <input />
-                            </div>
-                            <p>Contoh : email@tokopedia.com</p>
-                        </div>
-                        <div id="form-submit">
-                            <a href="www.google.com">Lupa Kata Sandi?</a>
-                            <div>
-                                <button>Selanjutnya</button>
-                            </div>
-                        </div>
-                        <div id="login-info">
-                            <div></div>
-                            <div>atau masuk dengan</div>
-                            <div></div>
-                        </div>
-                        <div id="login-by-google" class="login-by">
-                            <div>
-                                <img src="./assets/google.svg"/>
-                                <div>Google</div>
-                                <div></div>
-                            </div>
-                        </div>
-                        <div id="login-by-facebook" class="login-by">
-                            <div>
-                                <img src="./assets/facebook.svg"/>
-                                <div>Facebook</div>
-                                <div></div>
-                            </div>
-                        </div>
-                        <div id="info-tambahan">
-                            Belum punya akun Tokopedia? <a href="www.tokopedia.com/register">Daftar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="copyright">
-                2009-2020 © PT Tokopedia  |   <a href="https://www.tokopedia.com/help/">Bantuan</a>
-            </div>   
-        </div>
-    </body>
-</html>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+#form-wrapper {
+    width: 100%;
+    background-repeat: no-repeat;
+    padding: 40px 70px 25px;
+    min-height: 700px;
+    min-width: 400px;
+    max-width: 1000px;
+
+    background-image: url(./assets/tokopedia_login_background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form {
+    width: 378px;
+    height: 440px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 40px 32px 12px;
+}
+
+#form-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#form-header > h2 {
+    color: rgba(0,0,0,0.7);
+    line-height: 1.5;
+}
+
+#form-header > a {
+    text-decoration: none;
+    color: #42b549;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px;
+}
+
+#form-email input {
+    width: 90%;
+    height: 40px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-left: 15;
+    margin-right: 15;
+}
+
+#form-email > label, #form-email > p {
+    font-size: 12px;
+    line-height: 1.3;
+    color: rgba(0,0,0,.38);
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#form-submit button {
+    width: 90%;
+    border: 0;
+    background: #03ac0e;
+    color: #fff;
+    font-size: 13px;
+    height: 40px;
+    line-height: 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-left: 15;
+    margin-right: 15;
+}
+
+#form-submit a {
+    float: right;
+    text-decoration: none;
+    color: #42b549;
+    font-size: 12px;
+    white-space: nowrap;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+#login-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-info > div:nth-child(2) {
+    font-size: 12px;
+    text-align: center;
+    color: rgba(0,0,0,.38);
+    padding: 0 18px;
+    white-space: nowrap;
+}
+
+#login-info > div:nth-child(1), #login-info > div:nth-child(3) {
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0px;
+}
+
+.login-by > div {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4b4b4b;
+    border: 1px solid #e5e5e5;
+    white-space: nowrap;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 15px;
+    margin-bottom: 15px;
+}
+
+#info-tambahan {
+    margin-top: 10px;
+    text-align: center;
+    color: rgba(0,0,0,.54);
+    font-size: 13px;
+}
+
+#info-tambahan a{
+    text-decoration: none;
+    color: #42b549;
+}
+
+#copyright {
+    margin-top: 10px;
+    text-align: center;
+    color: rgba(0,0,0,.54);
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+#copyright a{
+    text-decoration: none;
+    color: #42b549;
