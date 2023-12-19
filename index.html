@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form Nomor HP</title>
+  <title>Tokopedia</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -23,84 +23,86 @@
       background-color: #fff;
       padding: 30px;
       border-radius: 8px;
-      box-shadow;: 5 5 10px rgba(7, 7, 7, 2.6);
-      text-align: center; /* Menengahkan form */
-      margin-top: 20px; /* Jarak antara form dan foto atas */
+      box-shadow: 5px 5px 10px rgba(7, 7, 7, 0.2);
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 10px; /* Tambahkan margin-bottom pada form */
       position: relative;
-      z-index: 10; /* Menempatkan form di lapisan lebih tinggi */
+      z-index: 10;
     }
 
-    img {
-      max-width: 100%; /* Memastikan foto tidak melebihi lebar form */
-      height: auto; /* Menjaga proporsi gambar */
-      border-radius: 8px; /* Memberikan sudut segiempat pada foto */
-      margin-bottom: 20px; /* Menambahkan jarak antara foto dan label/input */
-      position: relative;
-      z-index: 10; /* Menempatkan foto di lapisan lebih rendah */
+    img.bottom-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 30px;
+      margin-bottom: 20px;
     }
 
     .label-container {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       margin-bottom: 8px;
+      margin-left: -10px;
     }
 
     label {
       display: inline-block;
       margin-right: 8px;
+      margin-top: -10px; /* Adjusted margin-top */
     }
 
     .daftar-text {
       color: #4caf50;
+      margin-top: 5px; /* Menggeser ke bawah */
+      margin-right: 5px; /* Menggeser ke kiri */
+      position: absolute;
+      right: 0;
+      top: 0;
     }
 
     input {
-      width: calc(100% - 2px); /* Lebar kolom input diambil dari 100% minus margin kiri dan kanan */
+      width: calc(100% - 2px);
       padding: 12px;
-      margin-bottom: 8px;
+      margin-bottom: 15px;
       box-sizing: border-box;
     }
 
     .example-text {
       font-size: 12px;
       color: #666;
-      margin-bottom: 5px;
+      margin-top: -15px;
+      text-align: left;
+      margin-left: 5px;
     }
 
     button {
-      width: calc(100% - 20px); /* Lebar tombol diambil dari 100% minus margin kiri dan kanan */
+      width: calc(100% - 20px);
       background-color: #4caf50;
       color: #fff;
       padding: 13px;
       border: none;
       border-radius: 9px;
       cursor: pointer;
+      margin-top: 5px; /* Tambahkan margin-top pada tombol */
+      margin-bottom: 0; /* Menghapus margin-bottom pada tombol */
     }
 
     button:hover {
       background-color: #45a049;
-    }
-
-    .bottom-img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-top: 30px; /* Jarak antara foto dan form */
-      margin-bottom: 20px; /* Jarak antara foto bawah dan batas bawah form */
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <img src="https://raw.githubusercontent.com/Helpbri6/Helpbri6.github.io/main/seo-tokopedia-tips-strategi-removebg-preview.png" alt="Your Top Photo">
     <form>
       <div class="label-container">
         <label for="nomorHP">Email atau Nomor Ponsel</label>
         <span class="daftar-text">Daftar</span>
       </div>
-      <input type="tel"=nomorHP" name="nomorHP" placeholder="Masukkan nomor HP" required>
+      <input type="tel" name="nomorHP" placeholder="Masukkan nomor HP" required>
       <div class="example-text">Contoh: 123456789</div>
   
       <button type="submit">Kirim</button>
